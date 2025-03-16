@@ -1,0 +1,84 @@
+body {
+    background-image: url("https://media.istockphoto.com/id/2150678874/photo/young-woman-boarding-an-airplane.webp?a=1&b=1&s=612x612&w=0&k=20&c=nt-L6jsYIFNFiIwi3fXjVwuIrAC6xn2-jaWjvKrIL4A=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease-in-out;
+}
+
+#container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%; /* Makes it more responsive */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 60px; /* Reduce size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 40px; /* Reduce size for mobile */
+    }
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin: 10px auto;
+    display: block; /* Ensures full-width alignment */
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#increment-btn {
+    background: darkred;
+}
+
+#decrement-btn {
+    background: rgb(219, 153, 153);
+}
+
+#save-btn {
+    background: darkgreen;
+}
